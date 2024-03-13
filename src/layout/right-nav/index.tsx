@@ -5,14 +5,16 @@ const StyledNav = styled.div`
     font-size: var(--fs-xxs);
     font-family: 'Fira Code', monospace;
     color: var(--color-slate-300);
+    height: 100%;
+    display: flex;
+    padding-bottom: 150px;
 
     
     > .email-block {
-      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin-top: auto;
+      margin-inline: auto;
       > a {
         &:link,
         &:visited {
@@ -39,7 +41,7 @@ const StyledNav = styled.div`
           content: '';
           position: absolute;
           width: 1px;
-          height: 180px;
+          height: 150px;
           top: 115%;
           left: 50%;
           background-color: var(--color-slate-300);
