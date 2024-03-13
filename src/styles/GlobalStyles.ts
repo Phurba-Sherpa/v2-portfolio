@@ -25,7 +25,8 @@ const GlobalStyles = createGlobalStyle`
     /* */
     --fs-xxs: 1.2rem;
     --fs-xs: 1.3rem;
-    --fs-normal: 1.8rem;
+    --fs-md: 1.6rem;
+    --fs-lg: 1.8rem;
 }
   
 ////////////////////
@@ -52,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--color-slate-400);
     /* font-family: "Fira Code", monospace; */
     font-family: "Inter", sans-serif;
-    font-size: var(--fs-normal);
+    font-size: var(--fs-lg);
     line-height: 1.3;
 
   
@@ -64,6 +65,13 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
   }
-  `;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--color-slate-200);
+  }
+  `
+  ;
 
 export default GlobalStyles;

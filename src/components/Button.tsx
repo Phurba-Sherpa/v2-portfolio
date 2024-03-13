@@ -8,7 +8,7 @@ const StyledButton = styled.a`
     color: var(--color-green);
     text-decoration: none;
     border: 1px solid var(--color-green);
-    padding: .5em 1.5em;
+    padding: .75em 2.25em;
   }
 
   &::before {

@@ -13,7 +13,7 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     > img {
-        width: 8rem;
+        width: 7rem;
     }
 
     .nav-container {

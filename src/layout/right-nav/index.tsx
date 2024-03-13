@@ -7,7 +7,7 @@ const StyledNav = styled.div`
     color: var(--color-slate-300);
     height: 100%;
     display: flex;
-    padding-bottom: 150px;
+    padding-bottom: 170px;
 
     
     > .email-block {
@@ -41,7 +41,7 @@ const StyledNav = styled.div`
           content: '';
           position: absolute;
           width: 1px;
-          height: 150px;
+          height: 145px;
           top: 115%;
           left: 50%;
           background-color: var(--color-slate-300);

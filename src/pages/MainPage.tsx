@@ -9,21 +9,29 @@ import LandingPage from './LandingPage'
 const StyledMainPage = styled.div`
     height: 100dvh;
     display: grid;
-    grid-template-columns: 20rem 1fr 20rem;
-    grid-template-rows: 8rem 1fr;
+    grid-template-columns: 13rem 1fr 13rem;
+    grid-template-rows: 9rem 1fr;
     grid-template-areas:
         'header header header'
         'leftnav content rightnav';
 `
+
+const StyledContentSection = styled.main`
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+`
+
+
 export default function MainPage() {
     return (
         <StyledMainPage>
             <TopNav />
             <LeftNav />
             <RightNav />
-            <main>
+            <StyledContentSection>
                 <LandingPage />
-            </main>
+            </StyledContentSection>
         </StyledMainPage>
     )
 }

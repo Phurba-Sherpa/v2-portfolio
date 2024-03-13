@@ -7,7 +7,7 @@ const StyledNav = styled.nav`
     grid-area: leftnav;
     height: 100%;
     display: flex;
-    padding-bottom: 150px;
+    padding-bottom: 170px;
 
     > ul {
         list-style: none;
@@ -22,7 +22,7 @@ const StyledNav = styled.nav`
           content: '';
           display: block;
           width: 1px;
-          height: 150px;
+          height: 145px;
           top: 115%;
           left: 50%;
           background-color: var(--color-slate-300);
