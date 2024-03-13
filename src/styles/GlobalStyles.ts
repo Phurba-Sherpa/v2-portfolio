@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
     /* border */
 
     /* */
+    --fs-xxs: 1.2rem;
     --fs-xs: 1.3rem;
     --fs-normal: 1.8rem;
 }
