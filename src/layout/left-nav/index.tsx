@@ -20,7 +20,7 @@ const StyledNav = styled.nav`
 
         &::before {
           content: '';
-          display: block;
+          /* display: block; */
           width: 1px;
           height: 145px;
           top: 115%;

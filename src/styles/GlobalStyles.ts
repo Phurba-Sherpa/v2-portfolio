@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --color-white: #e6f1ff;
 
     /* width */
-  
+
 
     /* border */
 
@@ -27,6 +27,12 @@ const GlobalStyles = createGlobalStyle`
     --fs-xs: 1.3rem;
     --fs-md: 1.6rem;
     --fs-lg: 1.8rem;
+
+    /* family */
+    --fs-sans: "Inter", sans-serif;
+    --fs-fira: "Fira Code", monospace;
+
+
 }
   
 ////////////////////
@@ -51,8 +57,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--color-brand-400);
     color: var(--color-slate-400);
-    /* font-family: "Fira Code", monospace; */
-    font-family: "Inter", sans-serif;
+    font-family: var(--fs-sans);
     font-size: var(--fs-lg);
     line-height: 1.3;
 

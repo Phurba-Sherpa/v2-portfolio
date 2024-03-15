@@ -28,7 +28,7 @@ const SocialLinkItem = ({Icon}: INavItem) => {
     return (
         <StyledItem>
             <a href="#">
-                <Icon size={24} className="social-link" />
+                <Icon size={18} className="social-link" />
             </a>
         </StyledItem>
     )

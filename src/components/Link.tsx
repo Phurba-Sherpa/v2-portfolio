@@ -11,6 +11,25 @@ const StyledLink = styled.a`
         text-decoration: none;
         display: inline-block;
         color: var(--color-green);
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: transform .3s ease-in;
+            transform: scaleX(0);
+            transform-origin: right;
+
+        }
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 `
 
