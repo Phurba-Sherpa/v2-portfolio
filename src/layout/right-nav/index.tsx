@@ -49,6 +49,10 @@ const StyledNav = styled.div`
         }
       }
     }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
 `
 export default function RightNav() {
     return (

@@ -14,14 +14,19 @@ const StyledMainPage = styled.div`
     grid-template-areas:
         'header header header'
         'leftnav content rightnav';
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'content';
+    }
 `
 
 const StyledContentSection = styled.main`
     max-width: 100rem;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 `
-
 
 export default function MainPage() {
     return (
