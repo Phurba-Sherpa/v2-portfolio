@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
 const StyledNav = styled.div`
-    grid-area: rightnav;
     font-size: var(--fs-xxs);
-    font-family: 'Fira Code', monospace;
+    font-family: var(--ff-mono);
     color: var(--color-slate-300);
-    height: 100%;
-    display: flex;
-    padding-bottom: 170px;
-
+    
+    position: fixed;
+    right:6rem;
+    bottom: 145px;
     
     > .email-block {
       display: flex;

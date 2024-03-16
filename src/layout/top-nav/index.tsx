@@ -7,7 +7,7 @@ const StyledNav = styled.nav`
     padding-inline: 6rem;
     font-size: var(--fs-xs);
     grid-area: header;
-    font-family: 'Fira Code', monospace;
+    font-family: var(--ff-mono);
     color: var(--color-slate-200);
     display: flex;
     justify-content: space-between;

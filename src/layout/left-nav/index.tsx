@@ -4,10 +4,12 @@ import { FaGithub, FaMedium, FaLinkedin } from 'react-icons/fa6'
 import SocialLinkItem from './SocialLinkItem'
 
 const StyledNav = styled.nav`
-    grid-area: leftnav;
     height: 100%;
     display: flex;
     padding-bottom: 170px;
+    position: fixed;
+    left: 6rem;
+    bottom: 0;
 
     > ul {
         list-style: none;

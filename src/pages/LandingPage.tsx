@@ -15,7 +15,7 @@ const StyledPage = styled.div`
         &__greet {
             font-size: var(--fs-md);
             font-weight: 400;
-            font-family: 'Fira Code', monospace;
+            font-family: var(--ff-mono);
             color: var(--color-green);
             margin-bottom: 1.5em;
         }

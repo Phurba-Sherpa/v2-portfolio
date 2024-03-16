@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 
@@ -27,10 +27,12 @@ const GlobalStyles = createGlobalStyle`
     --fs-xs: 1.3rem;
     --fs-md: 1.6rem;
     --fs-lg: 1.8rem;
+    --fs-xl: 2rem;
+    --fs-head: 3.2rem;
 
     /* family */
-    --fs-sans: "Inter", sans-serif;
-    --fs-fira: "Fira Code", monospace;
+    --ff-sans: "Inter", sans-serif;
+    --ff-mono: "Fira Code", monospace;
 
 
 }
@@ -57,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--color-brand-400);
     color: var(--color-slate-400);
-    font-family: var(--fs-sans);
+    font-family: var(--ff-sans);
     font-size: var(--fs-lg);
     line-height: 1.3;
 
@@ -77,6 +79,4 @@ const GlobalStyles = createGlobalStyle`
     color: var(--color-slate-200);
   }
   `
-  ;
-
-export default GlobalStyles;
+export default GlobalStyles
