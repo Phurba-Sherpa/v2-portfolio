@@ -3,7 +3,7 @@ import Button from '../components/Button'
 import Link from '../components/Link'
 
 const StyledPage = styled.div`
-    height: 100%;
+height: 100%;
     h2 {
       font-size: clamp(22px, 8vw, 70px);
       margin-bottom: .35em;

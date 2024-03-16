@@ -49,6 +49,9 @@ const StyledNav = styled.div`
       }
     }
 
+    @media (max-width: 1200px) {
+      right: 3rem;
+    }
     @media screen and (max-width: 1024px) {
       display: none;
     }

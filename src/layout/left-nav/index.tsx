@@ -33,6 +33,9 @@ const StyledNav = styled.nav`
         }
     }
 
+    @media (max-width: 1200px) {
+      left: 3rem;
+    }
     @media screen and (max-width: 1024px) {
       display: none;
     }

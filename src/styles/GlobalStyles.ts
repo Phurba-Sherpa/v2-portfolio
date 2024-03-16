@@ -78,5 +78,11 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 600;
     color: var(--color-slate-200);
   }
+
+  p {
+    max-width: 55ch;
+    font-size: var(--fs-md);
+    margin-bottom: 1em;
+  }
   `
 export default GlobalStyles
