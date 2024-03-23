@@ -18,23 +18,23 @@ const GlobalStyles = createGlobalStyle`
     --color-white: #e6f1ff;
 
     /* width */
-
+    --navy-shadow: rgba(2, 12, 27, 0.7);
 
     /* border */
 
     /* */
     --fs-xxs: 1.2rem;
     --fs-xs: 1.3rem;
+    --fs-sm: 1.4rem;
     --fs-md: 1.6rem;
     --fs-lg: 1.8rem;
     --fs-xl: 2rem;
+    --fs-xxl: 2.2rem;
     --fs-head: 3.2rem;
 
     /* family */
     --ff-sans: "Inter", sans-serif;
     --ff-mono: "Fira Code", monospace;
-
-
 }
   
 ////////////////////
@@ -80,7 +80,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    max-width: 55ch;
+    max-width: 60ch;
     font-size: var(--fs-md);
     margin-bottom: 1em;
   }

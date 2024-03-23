@@ -21,23 +21,22 @@ const StyledNav = styled.nav`
         margin-inline: auto;
 
         &::before {
-          content: '';
-          /* display: block; */
-          width: 1px;
-          height: 145px;
-          top: 115%;
-          left: 50%;
-          background-color: var(--color-slate-300);
-          position: absolute;
+            content: '';
+            width: 1px;
+            height: 145px;
+            top: 115%;
+            left: 50%;
+            background-color: var(--color-slate-300);
 
+            position: absolute;
         }
     }
 
     @media (max-width: 1200px) {
-      left: 3rem;
+        left: 3rem;
     }
     @media screen and (max-width: 1024px) {
-      display: none;
+        display: none;
     }
 `
 
@@ -47,7 +46,7 @@ export default function LeftNav() {
             <ul>
                 <SocialLinkItem Icon={FaGithub} />
                 <SocialLinkItem Icon={FaLinkedin} />
-                <SocialLinkItem Icon={FaMedium}/>
+                <SocialLinkItem Icon={FaMedium} />
             </ul>
         </StyledNav>
     )
