@@ -6,9 +6,11 @@ import { EXP } from '../data'
 
 const StyledSection = styled.section`
     border: 1px solid orangered;
-    height: 100%;
-    padding: 6rem 12rem;
+    margin-bottom: 9.6rem;
+    width: 90%;
+    margin-inline: auto;
 
+    /* height: 100%; */
     .tab-container {
         display: flex;
         gap: 5rem;

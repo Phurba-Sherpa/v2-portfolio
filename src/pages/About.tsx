@@ -5,19 +5,17 @@ import Link from '../components/Link'
 import meUrl from '../assets/me.JPG'
 
 const StyledAboutSection = styled.section`
-    /* height: 100%; */
-    width: 90%;
-    margin: 0 auto;
-    padding-block: 6rem;
-    .section-title {
-    }
+    border: 1px solid orangered;
+    margin-bottom: 9.6rem;
+    margin-inline: auto;
+    width: 95%;
     ul {
         list-style: none;
         font-size: var(--fs-xs);
         font-family: var(--ff-mono);
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 60ch;
+        max-width: 55ch;
         row-gap: 0.625em;
         margin-top: 2em;
     }
@@ -30,16 +28,20 @@ const StyledAboutSection = styled.section`
             height: 30rem;
             align-self: self-start;
             position: relative;
+            transition: all 0.3s;
             > div {
+                background: var(--color-green);
+                border-radius: 9px;
                 height: 100%;
             }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                transition: all 0.3s;
+                mix-blend-mode: multiply;
+                filter: grayscale(100%) contrast(1);
                 border-radius: 9px;
-                filter: brightness(80%);
+
             }
 
             &::after {
@@ -56,12 +58,19 @@ const StyledAboutSection = styled.section`
             }
 
             &:hover {
-                img {
-                    transform: translate(-2px, -2px);
-                }
+                    transform: translate(-3px, -3px);
                 &::after {
-                    transform: translate(2px, 2px);
+                    transform: translate(3px, 3px);
                 }
+
+                div {
+                    background: none;
+                    img {
+                        filter: initial;
+                    }
+                }
+
+
             }
         }
     }

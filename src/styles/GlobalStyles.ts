@@ -21,7 +21,10 @@ const GlobalStyles = createGlobalStyle`
     --navy-shadow: rgba(2, 12, 27, 0.7);
 
     /* border */
-
+    --rounded-sm: 6px;
+    --rounded-sm: 9px;
+    --rounded-md: 12px;
+    
     /* */
     --fs-xxs: 1.2rem;
     --fs-xs: 1.3rem;

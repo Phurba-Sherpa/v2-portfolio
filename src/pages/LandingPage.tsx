@@ -3,6 +3,9 @@ import Button from '../components/Button'
 import Link from '../components/Link'
 
 const StyledPage = styled.div`
+    border: 1px solid orangered;
+    /* margin-bottom: 9.6rem; */
+
     height: 100%;
     h2 {
         font-size: clamp(22px, 8vw, 70px);

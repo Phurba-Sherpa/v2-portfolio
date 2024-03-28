@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Button from '../components/Button'
 
 const StyledContactPage = styled.div`
+    border: 1px solid orangered;
     height: 100%;
     display: flex;
     flex-direction: column;
