@@ -10,18 +10,21 @@ const StyledProjectLink = styled.ul`
         color: var(--color-slate-300);
     }
 `
-
-const ProjectLinkList = () => {
+type ILink = {
+    code: string
+    live: string
+}
+const ProjectLinkList = ({ code, live }: ILink) => {
     return (
         <StyledProjectLink>
             <li>
-                <a href="#">
+                <a href={code}>
                     <FiGithub className="github" size={20} />
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href={live}>
                     <FiExternalLink size={20} />
                 </a>
             </li>

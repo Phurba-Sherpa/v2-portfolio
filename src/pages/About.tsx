@@ -5,9 +5,8 @@ import Link from '../components/Link'
 import meUrl from '../assets/me.JPG'
 
 const StyledAboutSection = styled.section`
-    border: 1px solid orangered;
-    margin-bottom: 9.6rem;
-    margin-inline: auto;
+padding-block: 9.6rem;
+margin-inline: auto;
     width: 95%;
     ul {
         list-style: none;
@@ -137,6 +136,7 @@ const StyledListItem = styled.li`
         color: var(--color-green);
         margin-right: 0.75em;
     }
+    white-space: nowrap;
 `
 const SkillItem = ({ children }: PropsWithChildren) => {
     return <StyledListItem>{children}</StyledListItem>

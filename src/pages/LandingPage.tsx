@@ -3,17 +3,15 @@ import Button from '../components/Button'
 import Link from '../components/Link'
 
 const StyledPage = styled.div`
-    border: 1px solid orangered;
-    /* margin-bottom: 9.6rem; */
+    padding-block: 9.6rem;
 
-    height: 100%;
     h2 {
         font-size: clamp(22px, 8vw, 70px);
         margin-bottom: 0.35em;
     }
     .section-hero {
         &__content {
-            padding-top: 6em;
+            padding-block: 6em;
         }
         &__greet {
             font-size: var(--fs-md);

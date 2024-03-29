@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import Title from '../components/Title'
 import ProjectItem from '../components/ProjectItem'
+import { PROJECTS } from '../data'
 
 const StyledProjectSection = styled.section`
-    /* border: 1px solid orangered; */
-
+    padding-block: 9.6rem;
     > ul {
-        >li:not(:last-child) {
-            margin-bottom: 6.4rem;
+        > li:not(:last-child) {
+            margin-bottom: 9.6rem;
         }
     }
 `
@@ -16,9 +16,8 @@ const Projects = () => {
         <StyledProjectSection>
             <Title>Some Things I’ve Built</Title>
             <ul>
-                <ProjectItem />
-                <ProjectItem />
-                <ProjectItem />
+                {PROJECTS.map((project, index) => <ProjectItem key={index} {...project} />)}
+               
             </ul>
         </StyledProjectSection>
     )

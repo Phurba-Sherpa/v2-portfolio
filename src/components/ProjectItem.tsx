@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import TechStackList from './TechStackList'
 import ProjectLinkList from './ProjectLinkList'
-import v2url from '../assets/v2-personal-website.png'
 
 const StyledProject = styled.li`
     display: grid;
@@ -12,7 +11,7 @@ const StyledProject = styled.li`
         font-family: var(--ff-mono);
         color: var(--color-green);
         font-size: var(--fs-base);
-        margin-bottom: .8125em;
+        margin-bottom: .5em;
     }
 
     .project-details {
@@ -22,6 +21,13 @@ const StyledProject = styled.li`
             background-color: var(--color-brand-300);
             padding: 1.5em;
             border-radius: var(--rounded-xs);
+        }
+
+        &>h2 {
+            margin-bottom: 1.25em;
+        }
+        &>.tech-container {
+            padding: .5em 0 1em 0;
         }
     }
 
@@ -65,25 +71,33 @@ const StyledProject = styled.li`
     }
 `
 
-const ProjectItem = () => {
+type IProject = {
+    title: string,
+    desc: string,
+    techList: string[],
+    codePreview: string,
+    sitePreview: string,
+    imageUrl: string,
+}
+
+const ProjectItem = ({title, desc, techList, codePreview, sitePreview, imageUrl}: IProject) => {
     return (
         <StyledProject>
             <div className="project-details">
                 <p className="feature-text">Featured Project</p>
-                <h2>Personal Website</h2>
+                <h2>{title}</h2>
                 <p className="project__desc">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Alias, earum asperiores fugiat rem odio obcaecati excepturi
-                    sunt dicta! Impedit quo cupiditate architecto commodi
-                    laborum ex cum fugiat vel harum doloremque.
+                   {desc}
                 </p>
+                <div className='tech-container'>
                 <TechStackList
-                    techs={['React', 'Typescript', 'Styled Components', 'Vite']}
+                    techs={techList}
                 />
-                <ProjectLinkList />
+                </div>
+                <ProjectLinkList code={codePreview} live={sitePreview} />
             </div>
             <div className="project-img">
-                <img src={v2url} alt="personal website" />
+                <img src={imageUrl} alt="website screenshot" />
             </div>
         </StyledProject>
     )

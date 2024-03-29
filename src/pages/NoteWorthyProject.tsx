@@ -4,9 +4,7 @@ import Link from '../components/Link'
 import { noteWorthyProj } from '../data/note-worthy-projects'
 
 const StyledContainer = styled.section`
-    border: 1px solid orangered;
-    margin-bottom: 9.6rem;
-
+padding-block: 9.6rem;
     > header {
         text-align: center;
         > h2 {

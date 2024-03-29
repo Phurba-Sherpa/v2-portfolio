@@ -5,12 +5,10 @@ import Link from '../components/Link'
 import { EXP } from '../data'
 
 const StyledSection = styled.section`
-    border: 1px solid orangered;
-    margin-bottom: 9.6rem;
+    padding-block: 9.6rem;
     width: 90%;
     margin-inline: auto;
 
-    /* height: 100%; */
     .tab-container {
         display: flex;
         gap: 5rem;
@@ -149,11 +147,10 @@ const StyledMain = styled.div`
         font-size: var(--fs-xl);
         font-weight: 500;
         color: var(--color-slate-200);
-        margin-bottom: .5em;
-        &>span {
+        margin-bottom: 0.5em;
+        & > span {
             color: var(--color-green);
         }
-
     }
 
     .exp-date {
@@ -165,7 +162,7 @@ const StyledMain = styled.div`
     ul {
         list-style: none;
         > li {
-            margin-bottom: .5em;
+            margin-bottom: 0.5em;
             position: relative;
             max-width: 55ch;
             &::before {
@@ -174,45 +171,45 @@ const StyledMain = styled.div`
                 top: 0;
                 left: -3rem;
                 color: var(--color-green);
-                
             }
         }
     }
-
-
 `
 const TabContent = () => {
     return (
         <StyledMain role="tab-panels">
-            {EXP.map((exp, index) => <TabContentItem 
-            key={index}
-            {...exp}
-            id={`tab-${index+1}`} 
-            />)}
-           
+            {EXP.map((exp, index) => (
+                <TabContentItem key={index} {...exp} id={`tab-${index + 1}`} />
+            ))}
         </StyledMain>
     )
 }
 
-
 type IExp = {
-    company: string,
-    role: string,
-    duration: string,
-    tasks: string[],
+    company: string
+    role: string
+    duration: string
+    tasks: string[]
     id: string
 }
-const TabContentItem = ({role, company, duration, tasks, id}: IExp) => {
-    return <div id={id} hidden={id !== 'tab-1'}>
-        <h3>{role} <span>@</span><span><Link>{company}</Link></span></h3>
-        <p className='exp-date'>{duration}</p>
-        <ul>
-            {tasks.map((desc, i) => <li key={i}>{desc}</li>)}
-        </ul>
-    </div>
+const TabContentItem = ({ role, company, duration, tasks, id }: IExp) => {
+    return (
+        <div id={id} hidden={id !== 'tab-1'}>
+            <h3>
+                {role} <span>@</span>
+                <span>
+                    <Link>{company}</Link>
+                </span>
+            </h3>
+            <p className="exp-date">{duration}</p>
+            <ul>
+                {tasks.map((desc, i) => (
+                    <li key={i}>{desc}</li>
+                ))}
+            </ul>
+        </div>
+    )
 }
-
-
 
 //////////////////
 /* UTILS */
