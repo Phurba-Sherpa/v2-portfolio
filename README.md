@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Phurba Sherpa - personal website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Iterative version of my first portfolio. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Phurba Sherpa - a personal website](#Phurba-sherpa-a-personal-website)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+### Screenshot
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![screenshot](./screenshot.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Links
+
+- Solution URL: [*VIEW CODE*](https://github.com/Phurba-Sherpa/v2-portfolio)
+- Live Site URL: [*PREVIEW SITE*](https://v2.phurbasherpa.name.np/)
+
+## My process
+
+### Built with
+
+- React
+- Typescript
+- BEM
+- Styled components
+
+## Author
+
+- Website - [Phurba Sherpa](https://v2.phurba.sherpa.name.np)
+- Frontend Mentor - [@Phurba-Sherpa](https://www.frontendmentor.io/profile/Phurba-Sherpa)
+- Medium - [@phurba](https://medium.com/@phurba)
